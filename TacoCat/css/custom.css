@@ -1,0 +1,16 @@
+﻿body {
+
+}
+.btnWide {
+	width: 75%;
+	margin-top: 15px;
+}
+
+.txtWide {
+	width: 75%;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
