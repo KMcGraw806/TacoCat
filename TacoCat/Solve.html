@@ -20,71 +20,72 @@
 <body>
 
     <!-- Navigation -->
-    <body>
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-            <div class="container">
-                <a class="navbar-brand" href="/Index.html">Taco Cat</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/Index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Solve.html">Solve</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Code.html">Code</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Git</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-        <!-- Page Content -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="mt-5">Taco Cat</h1>
-                    <p class="lead"></p>
+            <a class="navbar-brand" href="/Index.html">Taco Cat</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Solve.html">Solve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Code.html">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-					<hr />
-					<div id="tacocat">
-						    <div>
-                                <input id="txtInput" type="text" placeholder="Enter your text" class="txtWide" />
+
+    <!-- Page Content -->
+    <section id="features">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h1 class="mt-5">Taco Cat</h1>
+                            <p class="lead"></p>
+
+                            <hr />
+                            <div id="tacocat">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input id="txtInput" type="text" placeholder="Enter your text" class="txtWide" />
+                                        <button id="btnPal" class="btn-sm btn-primary btnWide">Reverse!</button>
+                                    </div>
+                                    <div>
+                                        <p id="txtBackwards"></p>
+                                        <p id="txtOutput"></p>
+                                    </div>
+                                    <hr>
+
+                                </div>
                             </div>
-						    <div>
-                                <button id="btnPal" class="btn-sm btn-primary btnWide">Reverse!</button>
-                            </div>
-                            <div>
-                                <button onClick="clear()" type="reset" id="btnClear" class="btn-sm btn-primary btnWide">Take It Back Now Ya'll!</button></li>
-                            </div>
-                        <hr>
-                        <p id="txtOutput"></p>
-                        <!--<p id="step2"></p>
-                        <p id="step3"></p>
-                        <p id="step4"></p>
-                        <p id="palOut"></p>-->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+    </section>
+
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -92,85 +93,86 @@
 
     <script>
 
-		$('#btnPal').on('click', function () {
-			palindrome()
-		});
+        $('#btnPal').on('click', function () {
+            palindrome()
+        });
 
-		//function palindrome() {
-		//	let palindromeInput = $('#txtInput').val().toLowerCase();
-		//	let reverseInput = palindromeInput.split("").reverse().join("");
-		//	if (palindromeInput.localeCompare(reverseInput) === 0) {
-		//		$('#txtOutput').text(`The word ${palindromeInput} is a Palindrome`);
-		//	} else {
-		//		$('#txtOutput').text(`The word ${palindromeInput} is not a Palindrome`);
-		//	}
-		//}
+        //function palindrome() {
+        //	let palindromeInput = $('#txtInput').val().toLowerCase();
+        //	let reverseInput = palindromeInput.split("").reverse().join("");
+        //	if (palindromeInput.localeCompare(reverseInput) === 0) {
+        //		$('#txtOutput').text(`The word ${palindromeInput} is a Palindrome`);
+        //	} else {
+        //		$('#txtOutput').text(`The word ${palindromeInput} is not a Palindrome`);
+        //	}
+        //}
 
-		function palindrome() {
+        function palindrome() {
 
-			var word = ($('#txtInput').val());
+            var word = ($('#txtInput').val());
 
-			if (word === "") {
-				alert("Please enter word, phrase or number.")
-				return
-			}
+            if (word === "") {
+                alert("Please enter word, phrase or number.")
+                return
+            }
 
-			var palWord = word.toLowerCase();
-			palWord = palWord.replace(/\s|\,|\'|\"/g, '');
+            var palWord = word.toLowerCase();
+            palWord = palWord.replace(/\s|\,|\'|\"/g, '');
 
-			var revWord = palWord.split("").reverse().join("");
+            var revWord = palWord.split("").reverse().join("");
 
-			if (word === revWord) {
-				results = `${word} IS a palindrome!`
-			}
+            if (word === revWord) {
+                results = `The word ${word} IS a palindrome!`
+            }
 
-			else {
-				results = `${word} is NOT a palindrome...`
-			}
+            else {
+                results = `The word ${word} is NOT a palindrome...`
+            }
 
-			$("#txtOutput").show();
-			$("#txtOutput").html(`${results}`);
+            $("#txtOutput").show();
+            $("#txtBackwards").html(`The word ${palWord} backwards is ${revWord}.`);
+            $("#txtOutput").html(`${results}`);
 
 
-			$('#btnClear').on('click', function () {
-				clear()
+            $('#btnClear').on('click', function () {
+                clear()
             });
 
-			function clear() {
+            function clear() {
                 document.getElementById("tacocat").reset();
-			}
+            }
 
         }
 
-        //$("#palTest").click(function () {
+                                //$("#palTest").click(function () {
 
-            //let inputWord = $("#txtInput").val()
-            //$("#step1").text(`Your text was ${inputWord}`);
+                                    //let inputWord = $("#txtInput").val()
+                                    //$("#step1").text(`Your text was ${inputWord}`);
 
-            //if (inputWord.length < 2) { alert("Please use two or more characters") } else {
-            //let word = inputWord.toLowerCase().replace(/\s|\'|\"/g, '');
-            //    $("#step2").text(`After clean up that becomes ${word}`);
+                                    //if (inputWord.length < 2) { alert("Please use two or more characters") } else {
+                                    //let word = inputWord.toLowerCase().replace(/\s|\'|\"/g, '');
+                                    //    $("#step2").text(`After clean up that becomes ${word}`);
 
-            //let reversedInput = inputWord.split('').reverse().join('');
-            //    $("#step3").text(`Your text reversed is ${reversedInput}`);
+                                    //let reversedInput = inputWord.split('').reverse().join('');
+                                    //    $("#step3").text(`Your text reversed is ${reversedInput}`);
 
-            //let revword = reversedInput.toLowerCase().replace(/\s|\'|\"/g, '');
-            //    $("#step4").text(`After clean up that becomes ${revword}`);
+                                    //let revword = reversedInput.toLowerCase().replace(/\s|\'|\"/g, '');
+                                    //    $("#step4").text(`After clean up that becomes ${revword}`);
 
-            //let message = `Your input was: ${inputWord}. Reversed is ${reversedInput}.`;
-            //let result = ""
-            //if (word == revword) {
-            //result = `Hooray! ${inputWord} is a palindrome!`;
-            //} else {
-            //result = `Aww man! ${inputWord} is not a palindrome!`;
-            //};
-            //$("#palOut").text(message + " " + result);
-            //}
-            //});
-            //$("#palbtnClear").click(function () {
-            //$("#pal").val("");
-            //$("#palOut").text("");
-            //});
+                                    //let message = `Your input was: ${inputWord}. Reversed is ${reversedInput}.`;
+                                    //let result = ""
+                                    //if (word == revword) {
+                                    //result = `Hooray! ${inputWord} is a palindrome!`;
+                                    //} else {
+                                    //result = `Aww man! ${inputWord} is not a palindrome!`;
+                                    //};
+                                    //$("#palOut").text(message + " " + result);
+                                    //}
+                                    //});
+                                    //$("#palbtnClear").click(function () {
+                                    //$("#pal").val("");
+                                    //$("#palOut").text("");
+                                    //});
 
     </script>
 
