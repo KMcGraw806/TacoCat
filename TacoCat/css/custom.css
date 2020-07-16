@@ -1,6 +1,7 @@
-﻿body {
-
+/*-- Use For Custom Styling --*/
+body {
 }
+
 .btnWide {
 	width: 75%;
 	margin-top: 15px;
@@ -14,27 +15,35 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
-.nav-box-shadow {
+
+.output {
+	font-size: 20px;
+}
+/*.nav-box-shadow {
 	-webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.15);
 	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.15);
 }
+
 .nav-item {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	height: 45.19px;
-
 }
+
 .navbar-brand {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 }
+
 .navbar.navbar-expand-lg.navbar-dark.static-top.nav-box-shadow {
 	height: 70px;
 }
+
 div#navbarResponsive.collapse.navbar-collapse {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
+
 a.nav-link.nav-color {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
@@ -43,4 +52,4 @@ a.nav-link.nav-color {
 	padding-bottom: 9.6px;
 	padding-left: 20.8px;
 	padding-right: 20.8px;
-}
+}*/

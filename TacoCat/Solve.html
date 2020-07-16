@@ -1,62 +1,134 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
+    <!-- Meta Tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Author -->
+    <meta name="author" content="Themesindustry">
+    <!-- description -->
+    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and portfolio HTML5 template with 8 ready home page demos.">
+    <!-- keywords -->
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, faq">
 
-    <title>Taco Cat by Kayla</title>
+    <!-- Page Title -->
+    <title>Kayla's Portfolio</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="../css/custom.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon-32x32.png">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/cubeportfolio.min.css">
+    <!-- Slick CSS Files -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom Style CSS File -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+        .title {
+            font-weight: 300;
+        }
+
+        .list-inline-item {
+            padding-top: 30px;
+            padding-right: 20px;
+        }
+
+        p.color-grey.contact {
+            font-size: 15px;
+        }
+
+        .email {
+            padding-right: 5px;
+        }
+    </style>
 
 </head>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="90">
 
-<body>
+    <!-- Loader -->
+    <div class="loader" id="loader-fade">
+        <div class="loader-container">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!-- Loader ends -->
+    <!-- Header start -->
+    <header>
+        <nav class="navbar navbar-top-default navbar-expand-lg static-nav black nav-radius transparent-bg fixed-top <!--bottom-nav--> box-nav not-full no-animation">
+            <div class="container radius nav-box-shadow">
+                <a class="logo link" href="javascript:void(0)">
+                    <!--<img src="img/logo.png" alt="logo" title="Logo">-->
+                </a>
+                <div class="collapse navbar-collapse d-none d-lg-block">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="/index.html" class="nav-link link">home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/solve.html" class="nav-link link">Solve</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Code.html" class="nav-link link">Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" href="https://github.com/KMcGraw806/TacoCat" class="nav-link link">Git</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank" href="https://ksm-portfolio.netlify.app/" class="nav-link link">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark <!--bg-dark--> static-top nav-box-shadow">
-        <div class="container">
-            <a class="navbar-brand" href="/Index.html">Taco Cat</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link nav-color" href="/Solve.html">Solve</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-color" href="/Code.html">Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-color" target="_blank" href="https://github.com/KMcGraw806/TacoCat/tree/master/TacoCat">Git</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-color" target="_blank" href="https://ksm-portfolio.netlify.app/">Portfolio</a>
-                    </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link nav-color" href="#">Blog Post/YouTube Explanation</a>
-                    </li>-->
-                </ul>
+                <!-- side menu open button -->
+                <a class="menu_bars d-inline-block menu-bars-setting menu-inner" id="sidemenu_toggle">
+                    <div class="menu-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Side Menu -->
+        <div class="side-menu">
+            <div class="inner-wrapper nav-icon">
+                <span class="btn-close link" id="btn_sideNavClose"></span>
+                <nav class="side-nav w-100">
+                    <div class="navbar-nav">
+                        <a class="nav-link link" href="/index.html">Home</a>
+                        <a class="nav-link link active" href="/solve.html">Solve</a>
+                        <a class="nav-link link" href="/Code.html">Code</a>
+                        <a class="nav-link link" href="https://github.com/KMcGraw806/TacoCat">Git</a>
+                        <a class="nav-link link" href="https://ksm-portfolio.netlify.app/">Portfolio</a>
+                        <span class="menu-line"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                    </div>
+                </nav>
+
+                <div class="side-footer text-white w-100">
+                    <ul class="social-icons-simple">
+                        <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-facebook-f color-white"></i> </a> </li>
+                        <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-instagram color-white"></i> </a> </li>
+                        <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-twitter color-white"></i> </a> </li>
+                    </ul>
+                    <p class="text-white">&copy; 2020 Kayla McGraw</p>
+                </div>
             </div>
         </div>
-    </nav>
+        <a id="close_side_menu" href="javascript:void(0);"></a>
+        <!--Side Menu-->
+    </header>
+    <!-- Header end -->
 
-
-    <!-- Page Content -->
     <section id="features">
         <div class="container-fluid">
             <div class="row">
@@ -74,8 +146,10 @@
                                         <button id="btnPal" class="btn-sm btn-primary btnWide">Reverse!</button>
                                     </div>
                                     <div>
-                                        <p id="txtBackwards"></p>
-                                        <p id="txtOutput"></p>
+                                        <br />
+                                        <p id="txtBackwards" class="output"></p>
+                                        <br />
+                                        <p id="txtOutput" class="output"></p>
                                     </div>
                                     <hr>
 
@@ -88,26 +162,68 @@
         </div>
     </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Footer starts -->
+    <footer class="p-half bg-white fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="contact-info text-center">
+
+                </div>
+                <div class="col-md-12 col-sm-12 text-center">
+                    <ul class="footer-icons mb-4">
+                        <li><a href="javascript:void(0)" class="wow fadeInUp facebook"><i class="fab fa-facebook-f"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInDown twitter"><i class="fab fa-twitter"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInUp google"><i class="fab fa-google"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInDown linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInUp instagram"><i class="fab fa-instagram"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInDown pinterest"><i class="fab fa-pinterest-p"></i> </a> </li>
+                    </ul>
+                    <p class="copyrights mt-2 mb-2">© 2020 Kayla McGraw</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+    <!--Animated Cursor-->
+    <div id="animated-cursor">
+        <div id="cursor">
+            <div id="cursor-loader"></div>
+        </div>
+    </div>
+    <!--Animated Cursor End-->
+    <!-- JavaScript -->
+    <script src="js/bundle.min.js"></script>
+
+    <!-- Plugin Js -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/parallaxie.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Owl Carousel JS File -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Particles JS File -->
+    <script src="js/particles.min.js"></script>
+    <!-- EqualHeight JS File -->
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <!-- Owl Carousel JS File -->
+    <script src="js/owl.carousel.js"></script>
+    <!-- Typewriter JS File -->
+    <!--<script src="js/typewriter.js"></script>-->
+    <!-- Google Map Api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
+    <script src="js/maps.min.js"></script>
+    <!-- custom script -->
+    <script src="js/contact_us.js"></script>
+    <script src="js/script.js"></script>
 
     <script>
 
         $('#btnPal').on('click', function () {
             palindrome()
         });
-
-        //function palindrome() {
-        //	let palindromeInput = $('#txtInput').val().toLowerCase();
-        //	let reverseInput = palindromeInput.split("").reverse().join("");
-        //	if (palindromeInput.localeCompare(reverseInput) === 0) {
-        //		$('#txtOutput').text(`The word ${palindromeInput} is a Palindrome`);
-        //	} else {
-        //		$('#txtOutput').text(`The word ${palindromeInput} is not a Palindrome`);
-        //	}
-        //}
 
         function palindrome() {
 
@@ -123,12 +239,12 @@
 
             var revWord = palWord.split("").reverse().join("");
 
-            if (word === revWord) {
-                results = `The word ${word} IS a palindrome!`
+            if (palWord === revWord) {
+                results = `The word ${word} <b>IS</b> a palindrome!`
             }
 
             else {
-                results = `The word ${word} is NOT a palindrome...`
+                results = `The word ${word} is <b>NOT</b> a palindrome...`
             }
 
             $("#txtOutput").show();
@@ -146,38 +262,8 @@
 
         }
 
-                                //$("#palTest").click(function () {
-
-                                    //let inputWord = $("#txtInput").val()
-                                    //$("#step1").text(`Your text was ${inputWord}`);
-
-                                    //if (inputWord.length < 2) { alert("Please use two or more characters") } else {
-                                    //let word = inputWord.toLowerCase().replace(/\s|\'|\"/g, '');
-                                    //    $("#step2").text(`After clean up that becomes ${word}`);
-
-                                    //let reversedInput = inputWord.split('').reverse().join('');
-                                    //    $("#step3").text(`Your text reversed is ${reversedInput}`);
-
-                                    //let revword = reversedInput.toLowerCase().replace(/\s|\'|\"/g, '');
-                                    //    $("#step4").text(`After clean up that becomes ${revword}`);
-
-                                    //let message = `Your input was: ${inputWord}. Reversed is ${reversedInput}.`;
-                                    //let result = ""
-                                    //if (word == revword) {
-                                    //result = `Hooray! ${inputWord} is a palindrome!`;
-                                    //} else {
-                                    //result = `Aww man! ${inputWord} is not a palindrome!`;
-                                    //};
-                                    //$("#palOut").text(message + " " + result);
-                                    //}
-                                    //});
-                                    //$("#palbtnClear").click(function () {
-                                    //$("#pal").val("");
-                                    //$("#palOut").text("");
-                                    //});
-
     </script>
-
 </body>
-
 </html>
+
+
