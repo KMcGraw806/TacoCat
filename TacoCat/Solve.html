@@ -136,7 +136,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <h1 class="mt-5">Taco Cat</h1>
-                            <p class="lead"></p>
+                            <p class="lead">Would you like to impress your friends by shouting a random word or phrase backwards? Well go ahead and enter it below and I'll show you how! I will be removing spaces and punctuation, because who needs those! You and I both know you're just going to shout it as one word anyway...</p>
 
                             <hr />
                             <div id="tacocat">
@@ -231,7 +231,7 @@
             var word = ($('#txtInput').val());
 
             if (word === "") {
-                alert("Please enter word, phrase or number.")
+                alert("Please enter word or phrase.")
                 return
             }
 
@@ -241,15 +241,15 @@
             var revWord = palWord.split("").reverse().join("");
 
             if (palWord === revWord) {
-                results = `The word ${word} <b>IS</b> a palindrome!`
+                results = `<b>${word}</b> <b>IS</b> a palindrome!`
             }
 
             else {
-                results = `The word ${word} is <b>NOT</b> a palindrome...`
+                results = `<b>${word}</b> is <b>NOT</b> a palindrome...`
             }
 
             $("#txtOutput").show();
-            $("#txtBackwards").html(`The word ${palWord} backwards is ${revWord}.`);
+            $("#txtBackwards").html(`After removing all spaces, punctuation and making it entirely lower case, ${palWord} backwards is ${revWord}.`);
             $("#txtOutput").html(`${results}`);
 
 
