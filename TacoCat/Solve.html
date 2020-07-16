@@ -144,6 +144,7 @@
                                     <div class="col-6">
                                         <input id="txtInput" type="text" placeholder="Enter your text" class="txtWide" />
                                         <button id="btnPal" class="btn-sm btn-primary btnWide">Reverse!</button>
+                                        <button id="btnClear" class="btn-sm btn-primary btnWide">Clear</button>
                                     </div>
                                     <div>
                                         <br />
@@ -253,7 +254,8 @@
 
 
             $('#btnClear').on('click', function () {
-                clear()
+                $("#txtInput").val('');
+                $("#txtOutput, #txtBackwards").html('');
             });
 
             function clear() {

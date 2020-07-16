@@ -19,37 +19,6 @@ h1 {
 .output {
 	font-size: 20px;
 }
-/*.nav-box-shadow {
-	-webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.15);
+.fixed-menu .navbar-nav .nav-link:hover, .fixed-menu .navbar-nav .nav-link.active {
+	color: #1D9A85;
 }
-
-.nav-item {
-	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
-	height: 45.19px;
-}
-
-.navbar-brand {
-	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
-}
-
-.navbar.navbar-expand-lg.navbar-dark.static-top.nav-box-shadow {
-	height: 70px;
-}
-
-div#navbarResponsive.collapse.navbar-collapse {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-}
-
-a.nav-link.nav-color {
-	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
-	margin: 0px 4.8px;
-	padding-top: 9.6px;
-	padding-bottom: 9.6px;
-	padding-left: 20.8px;
-	padding-right: 20.8px;
-}*/
