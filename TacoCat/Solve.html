@@ -146,8 +146,8 @@
                             <hr />
                             <div id="tacocat">
                                 <div class="row">
-									<br />
-									<br />
+                                    <br />
+                                    <br />
                                     <div class="col-4">
                                         <input id="txtInput" type="text" placeholder="Enter your text" class="txtWide" />
                                         <button id="btnPal" class="btn btn-primary btnWide">Reverse!</button>
@@ -155,9 +155,9 @@
                                     </div>
                                     <div class="col-8 results">
                                         <br />
-										<p id="txtBackwards" class="output"></p>
+                                        <p id="txtBackwards" class="output"></p>
                                         <br />
-										<p id="txtOutput" class="output"></p>
+                                        <p id="txtOutput" class="output"></p>
                                     </div>
                                     <hr>
 
@@ -225,6 +225,7 @@
     <!-- custom script -->
     <script src="js/contact_us.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <script>
 
@@ -237,7 +238,7 @@
             var word = ($('#txtInput').val());
 
             if (word === "") {
-                alert("Please enter word or phrase.")
+                Swal.fire("Please enter word or phrase.")
                 return
             }
 
