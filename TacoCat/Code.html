@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Custom Style CSS File -->
     <link rel="stylesheet" href="css/custom.css">
+    <link href="css/prism (solarized light).css" rel="stylesheet" />
 
     <style>
         .title {
@@ -115,11 +116,11 @@
                 </nav>
 
                 <div class="side-footer text-white w-100">
-                    <ul class="social-icons-simple">
+                    <!--<ul class="social-icons-simple">
                         <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-facebook-f color-white"></i> </a> </li>
                         <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-instagram color-white"></i> </a> </li>
                         <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-twitter color-white"></i> </a> </li>
-                    </ul>
+                    </ul>-->
                     <p class="text-white">&copy; 2020 Kayla McGraw</p>
                 </div>
             </div>
@@ -133,19 +134,49 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="mt-5">This Page shows your JS code</h1>
-                    <p class="lead">You need to use a Syntax Highlighter - Prism.js is default</p>
+                    <h1 class="mt-5">Taco Cat Code Preview</h1>
+                    <!--<p class="lead">If you'd like to see how this is done, look no further than the block below</p>-->
                     <ul class="list-unstyled">
-                        <li>Code with highlighter</li>
-                        <li>Will display on this page</li>
+                        <li>If you would like to see how Taco Cat works</li>
+                        <li>look no further than the block below!</li>
                     </ul>
                 </div>
+            </div>
+            <div class="row">
+                <pre id="code-output" class="line-numbers language-javascript" data-src="/js/JavaScript.js">
+<code>function palindrome() {
+
+var word = ($('#txtInput').val());
+
+if (word === "") {
+alert("Please enter word or phrase.")
+return
+}
+
+var palWord = word.toLowerCase();
+palWord = palWord.replace(/\s|\.|\,|\'|\"/g, '');
+
+var revWord = palWord.split("").reverse().join("");
+
+if (palWord === revWord) {
+results = `${word} <b>IS</b> a palindrome!`
+}
+
+else {
+results = `${word} is <b>NOT</b> a palindrome...`
+}
+
+$("#txtOutput").show();
+$("#txtBackwards").html(`After removing all spaces, punctuation and making it entirely lower case, ${palWord} backwards is ${revWord}.`);
+$("#txtOutput").html(`${results}`);
+</code>
+                </pre>
             </div>
         </div>
     </section>
 
     <!-- Footer starts -->
-    <footer class="p-half bg-white fixed-bottom">
+    <!--<footer class="p-half bg-white fixed-bottom">
         <div class="container">
             <div class="row">
                 <div class="contact-info text-center">
@@ -164,7 +195,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>-->
     <!-- Footer ends -->
     <!--Animated Cursor-->
     <div id="animated-cursor">
@@ -200,7 +231,7 @@
     <!-- custom script -->
     <script src="js/contact_us.js"></script>
     <script src="js/script.js"></script>
-
+    <script src="js/prism (solarized light).js"></script>
 
 </body>
 </html>

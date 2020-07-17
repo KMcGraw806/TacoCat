@@ -49,6 +49,11 @@
         .email {
             padding-right: 5px;
         }
+		section, .section-padding {
+			position: relative;
+			padding: 10rem 0;
+			overflow: hidden;
+		}
     </style>
 
 </head>
@@ -115,11 +120,11 @@
                 </nav>
 
                 <div class="side-footer text-white w-100">
-                    <ul class="social-icons-simple">
+                    <!--<ul class="social-icons-simple">
                         <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-facebook-f color-white"></i> </a> </li>
                         <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-instagram color-white"></i> </a> </li>
                         <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-twitter color-white"></i> </a> </li>
-                    </ul>
+                    </ul>-->
                     <p class="text-white">&copy; 2020 Kayla McGraw</p>
                 </div>
             </div>
@@ -141,16 +146,18 @@
                             <hr />
                             <div id="tacocat">
                                 <div class="row">
-                                    <div class="col-6">
+									<br />
+									<br />
+                                    <div class="col-4">
                                         <input id="txtInput" type="text" placeholder="Enter your text" class="txtWide" />
-                                        <button id="btnPal" class="btn-sm btn-primary btnWide">Reverse!</button>
-                                        <button id="btnClear" class="btn-sm btn-primary btnWide">Clear</button>
+                                        <button id="btnPal" class="btn btn-primary btnWide">Reverse!</button>
+                                        <button id="btnClear" class="btn btn-primary btnWide">Clear</button>
                                     </div>
-                                    <div>
+                                    <div class="col-8 results">
                                         <br />
-                                        <p id="txtBackwards" class="output"></p>
+										<p id="txtBackwards" class="output"></p>
                                         <br />
-                                        <p id="txtOutput" class="output"></p>
+										<p id="txtOutput" class="output"></p>
                                     </div>
                                     <hr>
 
@@ -164,11 +171,10 @@
     </section>
 
     <!-- Footer starts -->
-    <footer class="p-half bg-white fixed-bottom">
+    <!--<footer class="p-half bg-white fixed-bottom">
         <div class="container">
             <div class="row">
                 <div class="contact-info text-center">
-
                 </div>
                 <div class="col-md-12 col-sm-12 text-center">
                     <ul class="footer-icons mb-4">
@@ -183,7 +189,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>-->
     <!-- Footer ends -->
     <!--Animated Cursor-->
     <div id="animated-cursor">
@@ -236,16 +242,16 @@
             }
 
             var palWord = word.toLowerCase();
-            palWord = palWord.replace(/\s|\,|\'|\"/g, '');
+            palWord = palWord.replace(/\s|\.|\,|\'|\"/g, '');
 
             var revWord = palWord.split("").reverse().join("");
 
             if (palWord === revWord) {
-                results = `<b>${word}</b> <b>IS</b> a palindrome!`
+                results = `${word} <b>IS</b> a palindrome!`
             }
 
             else {
-                results = `<b>${word}</b> is <b>NOT</b> a palindrome...`
+                results = `${word} is <b>NOT</b> a palindrome...`
             }
 
             $("#txtOutput").show();
